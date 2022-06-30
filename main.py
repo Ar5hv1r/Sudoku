@@ -13,4 +13,12 @@ board = [
     [0, 9, 0, 0, 0, 0, 4, 0, 0],
 ]
 
-pp.pprint(board)
+
+def find_blank(board):
+    for row in range(len(board)):
+        for col in range(len(board[0])):
+            if board[row][col] == 0:
+                print(f"Blank at row: {row} and column: {col}")
+
+
+find_blank(board)
